@@ -24,7 +24,7 @@ public class UserController {
     //用户登陆
     @RequestMapping ("/userlogin")
 
-//    public String userLogin(Model model,    String mobile,  String password, HttpSession session)
+//   public String userLogin(Model model,    String mobile,  String password, HttpSession session)
     public String  userLogin (Model model,@RequestBody User user,HttpSession session) {
 
         if((user.getMobile() == null || user.getMobile() == "") || (user.getPassword() == null || user.getPassword() == "")){
